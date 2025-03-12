@@ -1,0 +1,744 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7ED;
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav>a {
+  text-decoration: none;
+  /* border: 3px solid yellow; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 1%;
+  color: #423f4d;
+}
+
+nav {
+
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 3px solid blue; */
+}
+
+.main-nav {
+  background-color: #d7bea8;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.header {
+  /* border: 2px solid red; */
+  display: inline;
+  flex: 2;
+  padding-left: 3%;
+}
+
+footer {
+  background: #242f40;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  color: #59656f;
+}
+
+.home-body {
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240920/pngtree-a-camping-tent-in-nature-hiking-spot-relaxing-during-hike-mountains-image_16235104.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 7%;
+  height: 75vh;
+}
+
+.home-header {
+  color: white;
+  font-size: 3rem;
+  /* border: 3px solid red; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-shadow: 5px 8px 8px black;
+}
+
+.home-subHeader {
+  color: white;
+  font-size: 1.4rem;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-shadow: 5px 2px 4px black;
+  line-height: 1.8rem;
+}
+
+.home-button {
+  border: none;
+  background-color: #e85d04;
+  color: white;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-button-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-mainImg {
+  background-image: url('https://img.freepik.com/premium-photo/camper-is-sitting-front-van-with-word-camper-it_925376-99.jpg');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-header {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+.about-info {
+  background-color: #fcddbc;
+  /* border: 2px solid red; */
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.about-button-box {
+  background-color: #ff6b35;
+}
+
+.about-button {
+  border: none;
+  color: white;
+  background-color: black;
+  margin-top: 3%;
+  font-size: 1.5rem;
+  display: block;
+  padding: 5%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about-button-link {
+  text-decoration: none;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.about-button-box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.about-button-paragraph {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.van-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.van-display-div {
+  margin: 2%;
+  cursor: pointer;
+}
+
+.van-display-div:hover {
+  transform: scale(1.05);
+}
+
+.van-display-name,
+.van-display-price,
+.van-detail-name,
+.van-detail-price {
+  font-weight: bold;
+}
+
+.van-display-type {
+  background-color: orange;
+  padding: 5%;
+  margin-top: 3%;
+  display: inline-block;
+  border-radius: 8%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.orange {
+  background-color: sandybrown;
+}
+
+
+.green {
+  background-color: darkgreen;
+}
+
+.purple {
+  background-color: palevioletred;
+}
+
+.van-filter-button-div {
+  margin-left: 15%;
+  display: flex;
+}
+
+.van-filter-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.van-clear-button {
+  margin-right: 15%;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  padding-top: 1.5%;
+  cursor: pointer;
+  color: black;
+}
+
+.van-clear-button:hover {
+  transform: scale(1.1);
+}
+
+.van-filter-button {
+  margin: 7%;
+  padding: 9%;
+  border-radius: 10%;
+  border: none;
+  background-color: #f1dca7;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.van-filter-button:hover {
+  transform: scale(1.1);
+}
+
+.van-filter-header {
+  margin-left: 9%;
+}
+
+.van-links {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 2%;
+}
+
+.van-detail-photo-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.van-detail-type {
+  padding: 2%;
+  margin-top: 3%;
+  margin-left: 12%;
+  display: inline-block;
+  border-radius: 8%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.van-detail-name,
+.van-detail-price,
+.van-detail-paragraph {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.van-detail-rent-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 1.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.van-detail-button-link {
+  text-decoration: none;
+}
+
+.back-to-vans-link {
+  color: black;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.back-to-vans-link:hover {
+  transform: scale(1.1);
+}
+
+.my-van-nav-links {
+  color: black;
+}
+
+.my-van-div {
+  background-color: white;
+  padding: 4%;
+  /* border: 4px solid red; */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+
+}
+
+.my-van-header-div {
+  /* border: 2px solid blue; */
+  display: flex;
+
+}
+
+.back-to-vans-div {
+  display: flex;
+  padding-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.back-to-vans-arrow {
+  padding-top: .7%;
+  margin-right: 1.5%;
+
+}
+
+.my-van-image-div {
+  border-radius: 10px;
+}
+
+.my-van-info-div {
+  /* border: 2px solid orange; */
+  margin-left: 2%;
+  padding-top: 5%;
+
+}
+
+.my-van-name {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.my-van-price {
+  font-weight: bold;
+}
+
+.my-van-type {
+  padding: 2%;
+  display: inline-block;
+  border-radius: 8%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.detail-nav-div {
+  justify-content: flex-start;
+
+}
+
+.my-van-nav-links:hover {
+  text-decoration: 'underline';
+  font-weight: bold;
+
+}
+
+.my-van-details-description,
+.my-van-details-visability,
+.my-van-details-rented {
+  display: flex;
+  margin-bottom: 3%;
+
+}
+
+.details-label {
+  margin-right: 1.5%;
+  font-weight: bold;
+}
+
+.listed-van-div {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  padding: 3%;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.listed-header {
+  color: #252422;
+}
+
+.listed-van-image-div {
+  margin-right: 4%;
+}
+
+.listed-info-div {
+  padding-top: 5%;
+}
+
+.listed-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #403d39;
+}
+
+.listed-van-name {
+  font-size: 2rem;
+}
+
+.listed-title {
+  margin-left: 4%;
+}
+
+.dash-welcome-div {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6bd60;
+  border-radius: 5px;
+}
+
+
+.dash-welcome-label {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+  color: #403d39;
+}
+
+.dash-income-label {
+  font-size: 1.3rem;
+  padding-left: 3%;
+  font-style: italic;
+  margin-bottom: 2%;
+  color: #403d39;
+}
+
+.thirty-days {
+  text-decoration: underline;
+}
+
+.dash-income {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 3%;
+  color: #403d39;
+}
+
+.dash-income-link-div {
+  padding-top: 9%;
+}
+
+.dash-income-link,
+.dash-review-link {
+  color: #403d39;
+}
+
+.dash-review-div {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fb5607;
+  border-radius: 5px;
+
+}
+
+
+
+.dash-review-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 6%;
+  color: #212529;
+}
+
+.dash-review-link-div {
+  padding-top: 2%;
+}
+
+.dash-vans {
+  background-color: #c44536;
+  padding-top: 1%;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 3%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+}
+
+.price-label {
+  font-weight: bold;
+  margin-right: 2%;
+}
+
+.price-section {
+  display: flex;
+  margin-bottom: 1%;
+}
+
+.rev-star {
+  position: relative;
+  top: .5vh;
+}
+
+.rev-main-div {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.income-div {
+  background-color: #FFF7ED;
+}
+
+.income-main-div {
+  /* border: 3px solid red; */
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.transaction-div {
+  display: flex;
+  padding: 4%;
+}
+
+.transaction-label,
+.transaction-days {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 3%;
+  margin-bottom: 2%;
+}
+
+.transaction-photo {
+  margin-bottom: 4%;
+}
+
+.home-link {
+  display: inline-block;
+  position: relative;
+  bottom: 1vh;
+}
+
+.not-found-body {
+  padding-top: 15vh;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 72vh;
+}
+
+.not-found-button-div {
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.not-found-button {
+  width: 60%;
+  padding: 3%;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading-div {
+  display: inline-block;
+  padding-left: 40%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: 64vh;
+
+}
+
+.error-div {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: 64vh;
+}
+
+
+.login-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  height: 78vh;
+  padding-top: 5%;
+}
+
+.user-input {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding: 2%;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: .5%;
+}
+
+.login-button-container {
+  margin-top: 3%;
+}
+
+.login-first-text {
+  font-weight: bold;
+  padding: 0;
+  color: red;
+  position: relative;
+  top: .7rem;
+}
+
+.login-button {
+  width: 68%;
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+  background-color: #f77f00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-account-link {
+  color: #f77f00;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.soldout-container {
+  height: 65vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.soldout-header {
+  margin-top: 10%;
+}
+
+.soldout-button {
+  width: 80%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  background-color: #f77f00;
+  border: none;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.create-account-container {
+  height: 65vh;
+  text-align: center;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.account-input {
+  padding: 3%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  border: 2px solid #e5e5e5;
+}
+
+.account-button {
+  color: white;
+  font-weight: bold;
+  background-color: #003566;
+  cursor: pointer;
+}
+
+.account-error {
+  color: red;
+}
+
+.please-login-button {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #003566;
+}
