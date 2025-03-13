@@ -27,7 +27,6 @@ export default function Review() {
         <div className="rev-2-div">
           <img src="/src/images/rev-2.png" />
         </div>
-        <h1>how yous doin?</h1>
       </div>
     </>
   );
